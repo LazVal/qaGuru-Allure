@@ -21,7 +21,6 @@ public class SelenideTest {
     @Owner("LazVal")
     public void testIssueSearch() {
         SelenideLogger.addListener("allure", new AllureSelenide());
-
         open("https://github.com");
 
         $x("//button[@data-action='click:qbsearch-input#handleExpand']").click();
